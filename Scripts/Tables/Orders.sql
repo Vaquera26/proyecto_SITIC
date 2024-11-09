@@ -1,3 +1,5 @@
+USE dbSiticCommerce;
+
 IF NOT EXISTS (SELECT 1 FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[Orders]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
 BEGIN
 	/* Create Table */

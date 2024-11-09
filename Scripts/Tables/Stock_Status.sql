@@ -1,3 +1,4 @@
+USE dbSiticCommerce
 IF NOT EXISTS (SELECT 1 FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[Stock_Status]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
 BEGIN
 	/* Create Table */
